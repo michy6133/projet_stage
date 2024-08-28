@@ -1,0 +1,94 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.carrousel-container {
+  display:flex;
+  position: relative;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  z-index: 1;
+}
+
+.partie-1, .partie-2, .partie-3 {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  
+}
+
+.partie-1 {
+  clip-path: polygon(0 0%, 40% 0, 20% 100%, 0% 100%);
+  margin-right: -14em;
+}
+
+.partie-2 {
+  clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+  margin-right: -20em;
+  margin-left: -12em;
+}
+
+.partie-3 {
+  clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+}
+
+.image-fixe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.image-defilante-2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+  flex-shrink: 1;
+  transition: transform 1.5s ease-in-out;
+}
+.image-defilante-3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+  flex-shrink: 0;
+  transition: transform 1.5s ease-in-out;
+}
+
+
+
+.texte-bas-gauche {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.barre-defilement {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 100px;
+  height: 5px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.indicateur {
+  width: 20%;
+  height: 100%;
+  background-color: black;
+  border-radius: 5px;
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+}
+
+
