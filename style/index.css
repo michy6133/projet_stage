@@ -1694,17 +1694,20 @@ text-align: center;
 .blog{
   padding-top: 2em;
   display: inline-block;
-  text-align: justify;
+  text-align: center;
 }
 
 .carrousel-container2{
-  width: 200px;
-  margin-left: 2em;
+ width:15em;
+ margin:0em 5em 0em 2em;
 }
 
 .txt-blog{
   padding-top: 3em;
+  display: inline-block;
+  text-align: justify;
   padding-left: 0.1em;
+  padding-right: 1em;
 }
 
 .title-blog{
@@ -1715,57 +1718,58 @@ text-align: center;
 .parag-blog{
   font-size: 0.6em;
   padding-top: 1em;
-  width: 28em;
+  max-width: 25em;
+  min-width: 20em;
   line-height: 1.8em;
 }
 
 .footer{
-  background-color: rgb(208, 248, 255);
-  margin-top: 3em;
-  padding-top: 2em;
-  margin-bottom: -2em;
-  padding-left:0em;
-  padding-right: 0em;
+  padding-left:1em;
+  padding-right: 1em;
 }
 
 .foot-top{
   display: inline-block;
   text-align: center;
-  padding-left: 0.1em;
 }
 
 .ad-mail{
   width: 20em;
-  font-size: 0.8em;
+  font-size: 0.5em;
 }
 
 .tel{
   width: 20em;
-  font-size: 0.8em;
+  font-size: 0.5em;
 }
 
 .add{
   width: 20em;
-  font-size: 0.8em;
+  font-size: 0.5em;
 }
 
-.foot-top-left{
-  padding-left: 2em;
-}
+/*.foot-top-left{
+  padding-left: 1em;
+  padding-right: 8em;
+}*/
 
 .logo2{
   width: 10em;
 }
 
 .foot-top-middle{
+  display: inline-block;
+  text-align: center;
   padding-top: 2em;
-    padding-left: 2em;
+   /* padding-left: 5em;
+    padding-right: 10em;*/
 
 }
 
 .foot-top-right{
-  padding-top: 3em;
-    padding-left: 2em;
+  padding-top: 1em;
+   /* padding-left: 4em;
+    padding-right: 10em;*/
 
 }
 
@@ -1780,7 +1784,8 @@ text-align: center;
 }
 
 .tel, .ad-mail, .add{
-  padding-left: 1em;
+  padding-left: 0em;
+  padding-right: 5em;
 }
 
 .middle2{
@@ -1791,7 +1796,7 @@ text-align: center;
 text-align: center;
   padding-top: 2em;
   padding-bottom: 2em;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
     
