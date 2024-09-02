@@ -70,3 +70,6 @@ carouselPartie3.addEventListener('slid.bs.carousel', mettreAJourBarreDefilement)
 // Initialisation de la barre de défilement
 animerBarreDefilement();
 
+
+
+
