@@ -1377,6 +1377,8 @@ height: 2.5em;
   padding-top: 2em;
   display: inline-block;
   text-align: justify;
+  justify-content: center;  /* Centre verticalement le contenu */
+  align-items: center;      /* Centre horizontalement le contenu */
 }
 
 .carrousel-container2{
@@ -1386,18 +1388,25 @@ height: 2.5em;
 
 .txt-blog{
   padding-top: 3em;
+  padding-left: 0em;
 }
 
 .title-blog{
   font-size: 1.5em;  
   font-weight: 500;
+  max-width: 100%; /* Empêche le texte de dépasser la largeur du conteneur */
+
 }
 
-.parag-blog{
-  font-size: 0.9em;
+
+.parag-blog {
+  font-size: 2vw;  /* Utilise les unités en fonction de la largeur de l'écran */
   padding-top: 1em;
-  width: 35em;
-  line-height: 1.8em;
+  padding-left: 0em;
+  text-align: justify;
+  font-weight: 500;
+  line-height: 1.85em;
+  max-width: 100%; /* Empêche le texte de dépasser la largeur du conteneur */
 }
 
 .footer{
@@ -1560,7 +1569,7 @@ text-align: center;
 
 
 .carrousel-container {
-    width: 250px;
+    width: 275px;
     height: 200px;
   }
 
@@ -1691,113 +1700,124 @@ text-align: center;
   padding-bottom: 1.5em;
 }
 
-.blog{
+.blog {
   padding-top: 2em;
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Centre verticalement le contenu */
+  align-items: center;      /* Centre horizontalement le contenu */
 }
 
+
 .carrousel-container2{
- width:15em;
- margin:0em 5em 0em 2em;
+  width: 275px;
+  padding-left: 0em;
 }
 
 .txt-blog{
-  padding-top: 3em;
-  display: inline-block;
-  text-align: justify;
-  padding-left: 0.1em;
-  padding-right: 1em;
+  padding-left: 0em;
+  padding-top: 2em;
 }
 
 .title-blog{
   font-size: 1em;  
   font-weight: 500;
+  max-width: 100%; /* Empêche le texte de dépasser la largeur du conteneur */
+
 }
 
-.parag-blog{
-  font-size: 0.6em;
+.parag-blog {
+  font-size: 2vw;  /* Utilise les unités en fonction de la largeur de l'écran */
   padding-top: 1em;
-  max-width: 25em;
-  min-width: 20em;
-  line-height: 1.8em;
+  text-align: justify;
+  font-weight: 500;
+  line-height: 1.85em;
+  max-width: 100%; /* Empêche le texte de dépasser la largeur du conteneur */
 }
+
 
 .footer{
-  padding-left:1em;
-  padding-right: 1em;
-}
-
-.foot-top{
-  display: inline-block;
-  text-align: center;
-}
-
-.ad-mail{
-  width: 20em;
-  font-size: 0.5em;
-}
-
-.tel{
-  width: 20em;
-  font-size: 0.5em;
-}
-
-.add{
-  width: 20em;
-  font-size: 0.5em;
-}
-
-/*.foot-top-left{
-  padding-left: 1em;
-  padding-right: 8em;
-}*/
-
-.logo2{
-  width: 10em;
-}
-
-.foot-top-middle{
-  display: inline-block;
-  text-align: center;
+  background-color: rgb(208, 248, 255);
+  margin-top: 3em;
   padding-top: 2em;
-   /* padding-left: 5em;
-    padding-right: 10em;*/
-
-}
-
-.foot-top-right{
-  padding-top: 1em;
-   /* padding-left: 4em;
-    padding-right: 10em;*/
-
-}
-
-.middle1, .middle2, .foot-top-right{
-  display: flex;
-  justify-content: space-around;
-}
-
-.foot-icon{
-  width: 1em;
-  height: 1em;
-}
-
-.tel, .ad-mail, .add{
-  padding-left: 0em;
+  margin-bottom: -2em;
+  padding-left:5em;
   padding-right: 5em;
 }
 
-.middle2{
-  padding-top: 1.5em;
+.foot-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centre verticalement les éléments à l'intérieur */
+  align-items: center;     /* Centre horizontalement les éléments à l'intérieur */
+  text-align: center;      /* Centre le texte à l'intérieur des éléments */
+  height: 100%;            /* S'assure que l'élément prend toute la hauteur de son conteneur */
+  width: 100%;             /* S'assure que l'élément prend toute la largeur de son conteneur */
 }
 
+
+.foot-top-left,
+.foot-top-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Centre verticalement */
+  align-items: center;      /* Centre horizontalement */
+  text-align: center;       /* Centre le texte */
+  width: 100%;              /* S'assure que les éléments prennent toute la largeur disponible */
+  padding-left: 0em;
+}
+
+.foot-top-middle{
+  padding-top: 1em;
+}
+.foot-top-right{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  /* Centre verticalement */
+  align-items: center;      /* Centre horizontalement */
+  text-align: center;       /* Centre le texte */
+  width: 100%;              /* S'assure que les éléments prennent toute la largeur disponible */
+  padding-left: 0em;
+  padding-top: 1em;
+}
+
+.logo2 {
+  width: 10em;
+}
+
+.middle1,
+.middle2 {
+  display: flex;
+  justify-content: center;  /* Centre horizontalement les éléments */
+  align-items: center;      /* Centre verticalement les éléments */
+  width: 100%;              /* S'assure que les éléments prennent toute la largeur disponible */
+}
+
+.tel,
+.ad-mail,
+.add {
+  width: 10em;
+  font-size: 0.6em;
+  text-align: center;       /* Centre le texte à l'intérieur des éléments */
+  margin: 0.5em 0;          /* Ajoute un espacement pour un meilleur alignement */
+}
+
+.foot-icon {
+  width: 1em;
+  height: 1em;
+  margin: 0.5em;            /* Ajoute un espacement autour de l'icône */
+}
+
+.bot-txt{
+  font-size: 0.6em;
+}
 .foot-bottom{
 text-align: center;
   padding-top: 2em;
   padding-bottom: 2em;
-  font-size: 0.7em;
 }
+
+
 
     
 }
