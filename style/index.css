@@ -14,7 +14,8 @@ body {
     justify-content: space-between;
     background-color: white;
     box-shadow:0px 15px 10px rgb(235, 227, 227) ;
-    
+        position: relative; /* Permet de positionner le bouton en dehors du flux normal */
+
 }
 
 .header_left {
@@ -23,6 +24,8 @@ body {
 
 .header_right{
     margin-right: 5em;
+     display: flex;
+    justify-content: flex-end; /* Aligne le bouton sur la droite */
 }
 
 .connect {
@@ -36,6 +39,19 @@ body {
     font-size: 0.8em;
     padding-top: 0.2em;
 }
+
+/* Positionne le bouton en dehors du conteneur nav */
+.outside-nav {
+    position: absolute;
+    top: 40%; /* Positionne verticalement (ajustez selon vos besoins) */
+    right: 4em; /* Positionne horizontalement en dehors du collapse */
+    transform: translateY(-50%);
+    z-index: 10; /* Assure que le bouton soit au-dessus du contenu */
+    
+}
+
+
+
 
 .main {
     justify-content: space-between;
@@ -1239,6 +1255,13 @@ height: 2.5em;
     padding-top: 1.4em;
 }
 
+.outside-nav {
+  top: 6em;
+  right: 1em; /* Ajustez selon vos besoins, proche du bord droit */
+  background-color:  white;
+  box-shadow:0px 15px 10px rgb(235, 227, 227) ;;
+}
+
 .main {
     justify-content: space-around;
     padding-left:2em;
@@ -1504,6 +1527,14 @@ text-align: center;
 .connect p{
     font-size: 0.5em;
     padding-top: 1.4em;
+}
+
+.outside-nav {
+  right: 1em; /* Ajustez selon vos besoins, proche du bord droit */
+  top: 5em;
+  right: 1em; /* Ajustez selon vos besoins, proche du bord droit */
+  background-color:  white;
+  box-shadow:0px 15px 10px rgb(235, 227, 227) ;;
 }
 
 .main {
